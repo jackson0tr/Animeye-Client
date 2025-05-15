@@ -1,11 +1,11 @@
-// 'use client';
+"use client";
 
-// import { HeroSection } from "../organisms/hero";
+import Hero from "../organisms/hero";
 
-// export default function HomePage() {
-//   return (
-//     <div>
-//       <HeroSection />
-//     </div>
-//   );
-// }
+export default function HomePage() {
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
+}
