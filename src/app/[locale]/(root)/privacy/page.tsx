@@ -1,9 +1,9 @@
 import React from "react";
 // import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale as Unstable } from "next-intl/server";
-import FAQ from "@/components/organisms/faq";
-import Help from "@/components/organisms/help";
-import Privacy from "@/components/organisms/privacy";
+import FAQ from "@/components/organisms/roots/faq";
+import Help from "@/components/organisms/roots/help";
+import Privacy from "@/components/organisms/roots/privacy";
 
 
 export const dynamic = "force-dynamic";

@@ -8,7 +8,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { FaHeart, FaTrash, FaSearch, FaArrowRight } from "react-icons/fa";
 import { MdFavorite } from "react-icons/md";
 import { IoMdPerson } from "react-icons/io";
-import logo from "../../../public/imgs/logo.svg";
+import logo from "../../../../public/imgs/logo.svg";
 import Image from "next/image";
 import { FaCartShopping } from "react-icons/fa6";
 import {
@@ -47,7 +47,7 @@ export function Navbar() {
 
   return (
     <>
-      <motion.nav className="sticky top-0 z-50 pt-4 md:pt-7 px-7 w-full bg-[var(--background)] border-b border-gray-200">
+      <motion.nav className=" sticky top-0 z-50 pt-4 md:pt-7 px-7 w-full bg-[var(--background)] border-b border-gray-200">
         <div className="flex items-center justify-between h-20 md:p-6">
           <div className="flex items-center gap-1 md:gap-8">
             <div className="flex items-center gap-2">

@@ -13,6 +13,7 @@
   --white: #FFFFFF;
 
   --background: var(--white);
+  --hero: var(--white)
   --text: var(--gray-2);
   --primary: var(--dark-blue);
   --secondary: var(--purple);
@@ -26,6 +27,7 @@
   --background: var(--dark-blue);
   --text: var(--white);
   --primary: var(--purple);
+  --hero: var(--pink)
   --secondary: var(--white);
   --accent: var(--white);
   --success: var(--light-green);

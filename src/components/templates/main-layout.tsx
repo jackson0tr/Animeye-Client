@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from "react";
-import { Navbar } from "../organisms/navbar";
-import Footer from "../organisms/footer";
+import { Navbar } from "../organisms/layout/navbar";
+import Footer from "../organisms/layout/footer";
 
 
 const MainLayout = ({ children }: PropsWithChildren) => {

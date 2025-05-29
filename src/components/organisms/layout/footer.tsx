@@ -1,4 +1,5 @@
 "use client";
+import { useTheme } from "@/lib/helpers/theme-provider";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
@@ -32,7 +33,9 @@ const tapEffect = {
   scale: 0.95
 };
 
+
 export default function Footer() {
+  const { theme } = useTheme();
   return (
     <motion.footer 
       className="bg-[var(--pink)] text-white overflow-hidden"
@@ -163,7 +166,7 @@ export default function Footer() {
       </div>
 
       <motion.div 
-        className="bg-white text-gray-800 text-center flex flex-col sm:flex-row justify-between items-center text-sm py-4 px-4 md:px-38 space-y-2 sm:space-y-0"
+        className={`${theme === 'dark' ? 'bg-[var(--dark-blue)] text-[var(--white)]' : 'bg-[var(--white)] text-[var(--gray-2)]'}  text-center flex flex-col sm:flex-row justify-between items-center text-sm py-4 px-4 md:px-38 space-y-2 sm:space-y-0`}
         variants={containerVariants}
       >
         {["Copyright Notice: © 2024 Animeye. All Rights Reserved.", "Credits: Artwork by Duniya Reda."].map((text, index) => (

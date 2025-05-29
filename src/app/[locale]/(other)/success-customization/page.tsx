@@ -1,7 +1,7 @@
 import React from "react";
 // import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale as Unstable } from "next-intl/server";
-import FAQ from "@/components/organisms/roots/faq";
+import SuccessCustomization from "@/components/organisms/actions/success-customization";
 
 
 export const dynamic = "force-dynamic";
@@ -19,15 +19,15 @@ type Props = {
 //     };
 // }
 
-const FAQPage = async({ params }: Props) => {
+const SuccessCustomizationPage = async({ params }: Props) => {
     const resolvedParams = await params; // ✅ Unwrapping if it's a promise
     const { locale } = resolvedParams;
     // const { locale } = await params;
     Unstable(locale);
     
     return (
-        <FAQ />
+        <SuccessCustomization />
     );
 };
 
-export default FAQPage;
+export default SuccessCustomizationPage;
